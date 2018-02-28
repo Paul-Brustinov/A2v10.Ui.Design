@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>A2v10 Demo Design</title>
+	<link rel="stylesheet" href="site.css" />
+</head>
+<body>
+	<div class="main">
+		<div class="header">
+			<span class="title">A2v10:DESIGN</span>
+			<span class="subtitle">статична сторінка для тестування дизайну</span>
+			<span class="gap"></span>
+			<button class="user-button"><i class="ico ico-user"> login@mail.address</i> <span class="caret"></span></button>
+		</div>
+		<div class="navbar">
+			<ul class="navlist">
+				<li><a>Головна</a></li>
+				<li><a>Придбання</a></li>
+				<li class="active"><a>Реалізація</a></li>
+				<li><a>Запаси</a></li>
+				<li><a>Бухгалтерія</a></li>
+				<li><a>Персонал</a></li>
+			</ul>
+		</div>
+
+		<div class="sidebar">
+			<ul class="menu">
+				<li><a><i class="ico ico-dashboard"></i> Панель управління</a></li>
+				<li>
+					<i class="ico ico-expand"></i> <span class="folder">Документи</span>
+					<ul class="menu">
+						<li class="active"><a><i class="ico ico-file"></i> Прибуткові накладні</a></li>
+					</ul>
+				</li>
+				<li>
+					<i class="ico ico-expand"></i> <span class="folder">Довідники</span>
+					<ul>
+						<li><a><i class="ico ico-file"></i> Постачальники</a></li>
+						<li><a><i class="ico ico-file"></i> Товари/послуги</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="view">
+			<div class="toolbar">
+				<button><i class="ico ico-add"></i> Створити</button>
+				<button><i class="ico ico-arrow-open"></i> Відкрити</button>
+				<button disabled><i class="ico ico-delete"></i> Видалити</button>
+				<span class="divider"></span>
+				<button><i class="ico ico-refresh"></i> Оновити</button>
+			</div>
+			<table class="data-grid">
+				<thead>
+					<tr>
+						<th class="text-right">Код</th>
+						<th class="text-center">Дата</th>
+						<th>Номер</th>
+						<th>Стан</th>
+						<th>Постачальник</th>
+						<th class="text-right">Сума</th>
+						<th>Примітка</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="text-right">100</td>
+						<td class="text-center">28.02.2018</td>
+						<td>ПН-123</td>
+						<td><span class="tag-label warning">Чорнетка</span></td>
+						<td>ТОВ "Рога та копита"</td>
+						<td class="text-right">2 2345.34</td>
+						<td>Чекає на оплату</td>
+					</tr>
+					<tr>
+						<td class="text-right">105</td>
+						<td class="text-center">28.02.2018</td>
+						<td>ПН-125</td>
+						<td><span class="tag-label warning">Чорнетка</span></td>
+						<td>ТОВ "Сало та ковбаса"</td>
+						<td class="text-right">5 7710.15</td>
+						<td>Чекає на оплату</td>
+					</tr>
+					<tr class="active">
+						<td class="text-right">109</td>
+						<td class="text-center">27.02.2018</td>
+						<td>ПН-120</td>
+						<td><span class="tag-label success">Завершено</span></td>
+						<td>ТОВ "Свіжі овочі"</td>
+						<td class="text-right">5 7710.15</td>
+						<td>Відвантажено. Зателефонувати менеджеру.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<div class="footer">
+			<a>про програму...</a>
+		</div>
+	</div>
+</body>
+</html>
