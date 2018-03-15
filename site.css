@@ -19,12 +19,20 @@ body {
 	margin: 0;
 }
 
+a {
+	text-decoration:none;
+}
+
 .main {
 	display:grid;
 	grid-template-columns:18rem 1fr;
 	grid-template-rows:2.5rem 2.5rem 1fr 1.7rem;
 	width:100vw;
 	height:100vh;
+}
+
+.main.collapsed {
+	grid-template-columns:4rem 1fr;
 }
 
 .header {
@@ -364,4 +372,95 @@ i, .ico {
 
 .ico-user:before {
 	content: "\e998";
+}
+
+.ico-package:before {
+	content: "\e95d";
+}
+
+.sidebar2 {
+	grid-column: 1;
+	grid-row: 3;
+	/*border-right: 1px solid #cfd6e5;*/
+	padding: 0 0 0 6px;
+	background-color: #a2bce9;
+	margin-top: 6px;
+	position:relative;
+}
+
+ul.menu2 {
+	padding: 0;
+	margin: 0;
+	padding-top:4px;
+	padding-right:6px;
+}
+
+ul.menu2 li {
+	list-style-type: none;
+	color:white;
+	margin:6px 0;
+}
+
+ul.menu2 li > a {
+	display: block;
+	padding: 4px 0 6px 16px;
+	vertical-align:middle;
+	font-size:1.15rem;
+	color:currentColor;
+}
+
+
+ul.menu2 li.active {
+	background-color: white;
+	color: #777;
+}
+
+ul.menu2 li:hover {
+	background-color: #8ea6d0;
+}
+
+ul.menu2 li.active:hover {
+	background-color: white;
+}
+
+
+ul.menu2 li > a > .ico {
+	font-size:1.4rem;
+	margin-right:4px;
+}
+
+ul .menu2 li a:hover {
+	background-color: #fdf4bf;
+}
+
+#ecbtn {
+	background-color: #5d7090;
+	width: 18px;
+	height: 18px;
+	border-radius: 50%;
+	position: absolute;
+	right: -7px;
+	top: 50%;
+	cursor: pointer;
+}
+
+	#ecbtn:after {
+		content: "\e9ab";
+		font-family: Bowtie;
+		color:white;
+		font-size:1.2rem;
+		display:block;
+		padding:1px 0 0 1px;
+	}
+
+	#ecbtn.collapsed:after {
+		content: "\e9ad";
+	}
+
+.collapsed .menutitle {
+	display:none;	
+}
+
+.collapsed ul.menu2 li a {
+	padding-left:12px;
 }

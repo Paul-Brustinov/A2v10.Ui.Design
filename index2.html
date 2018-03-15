@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="site.css" />
 </head>
 <body>
-	<div class="main">
+	<div class="main" id="main">
 		<div class="header">
 			<span class="title">A2v10:DESIGN</span>
 			<span class="subtitle">статична сторінка для тестування дизайну</span>
@@ -18,30 +18,23 @@
 		<div class="navbar">
 			<ul class="navlist">
 				<li><a>Головна</a></li>
-				<li class="active"><a>Придбання</a></li>
-				<li><a href="index2.html">Реалізація</a></li>
+				<li><a href="index.html">Придбання</a></li>
+				<li class="active"><a>Реалізація</a></li>
 				<li><a>Запаси</a></li>
 				<li><a>Бухгалтерія</a></li>
 				<li><a>Персонал</a></li>
 			</ul>
 		</div>
 
-		<div class="sidebar">
-			<ul class="menu">
-				<li><a><i class="ico ico-dashboard"></i> Панель управління</a></li>
-				<li>
-					<i class="ico ico-expand"></i> <span class="folder">Документи</span>
-					<ul class="menu">
-						<li class="active"><a><i class="ico ico-file"></i> Прибуткові накладні</a></li>
-					</ul>
-				</li>
-				<li>
-					<i class="ico ico-expand"></i> <span class="folder">Довідники</span>
-					<ul>
-						<li><a><i class="ico ico-file"></i> Постачальники</a></li>
-						<li><a><i class="ico ico-file"></i> Товари/послуги</a></li>
-					</ul>
-				</li>
+		<div class="sidebar2" id="sidebar2">
+			<div id="ecbtn">
+
+			</div>
+			<ul class="menu2">
+				<li title="Панель управління"><a><i class="ico ico-dashboard"></i> <span class="menutitle">Панель управління</span></a></li>
+				<li title="Документи" class="active"><a><i class="ico ico-file"></i> <span class="menutitle">Документи</span></a></li>
+				<li title="Постачальники" ><a><i class="ico ico-user"></i> <span class="menutitle">Постачальники</span></a></span></li>
+				<li title="Товари/послуги" ><a><i class="ico ico-package"></i> <span class="menutitle">Товари/послуги</span></a></li>
 			</ul>
 		</div>
 
@@ -101,5 +94,21 @@
 			<a>про програму...</a>
 		</div>
 	</div>
+	<script type="text/javascript">
+		(function () {
+
+			let d = document.getElementById('ecbtn');
+			let sb = document.getElementById('sidebar2');
+			let m = document.getElementById('main');
+
+			function onClick() {
+				d.classList.toggle('collapsed');
+				sb.classList.toggle('collpased');
+				m.classList.toggle('collapsed');
+			}
+
+			d.addEventListener('click', onClick, false);
+		})();
+	</script>
 </body>
 </html>
